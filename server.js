@@ -8,8 +8,8 @@ const Port = 3000;
 /* Export Functions */
 /* Local Functions */
 /* Execution & Test Data */
-app.get("/", (req, res) => {
-  res.send("Hello World");
+app.get("/", (request, response) => {
+  response.send("Hello World");
 });
 app.listen(Port, () => {
   console.log(`Server is running on port ${Port}`);
